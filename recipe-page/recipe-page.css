@@ -1,0 +1,43 @@
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.recipe-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+.recipe-info {
+  width: 100%;
+  text-align: center;
+  padding: 4%;
+  margin-top: 10%;
+}
+.recipe-picture {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+.recipe-picture img {
+  width: 100%;
+}
+.notice {
+  margin-top: 10px;
+  font-size: small;
+}
+.recipe-actions {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  align-items: center;
+}
+.recipe-button {
+  background-color: #fab714;
+  border-radius: 10%;
+  width: 180px;
+  height: 50px;
+  margin-bottom: px;
+}
