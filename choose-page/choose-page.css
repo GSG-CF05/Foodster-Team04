@@ -30,4 +30,32 @@
     border: 10px solid #fab714;
     height: 205px;
   }
+  @media (min-width: 1200px) {
+    div {
+      margin: 0%;
+    }
+    .Option img {
+      width: 15%;
+      border-radius: 50%;
+      border: 6px solid #fab714;
+      height: 205px;
+    }
+  
+    .Options {
+      flex-direction: row;
+    }
+    .Option img {
+      margin-top: 2rem;
+      width: 200px;
+      margin: 3rem;
+    }
+    .header h1 {
+      margin-top: 3rem;
+    }
+    body {
+      padding-bottom: 12.4rem;
+    }
+  }
+  
+  
  
