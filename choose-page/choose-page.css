@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #fafafa;
+    background-image: url(../assets/images/Rectangle-1.svg),
+      url(../assets/images/Rectangle-2.svg);
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    padding-bottom: 51px;
+  }
+  .header h1 {
+    color: #fab714;
+    text-align: center;
+    margin: 20px;
+    font-size: 55px;
+  }
+  .Options {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Option img {
+    margin-top: 1rem;
+    width: 60%;
+    border-radius: 50%;
+    border: 10px solid #fab714;
+    height: 205px;
+  }
+ 
