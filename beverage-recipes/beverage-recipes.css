@@ -74,3 +74,23 @@ a {
 .Card h3 {
   text-align: center;
 }
+
+@media (min-width: 1200px) {
+    header h1 {
+      padding: 55px 23px 22px 25px;
+      text-align: center;
+      font-size: 30px;
+    }
+    .Card {
+      width: 200px;
+      height: 250px;
+    }
+    .Categories {
+      display: flex;
+      overflow: hidden;
+      flex-direction: row;
+      padding-left: 2rem;
+      margin-top: 0.5rem;
+    }
+  }
+  
