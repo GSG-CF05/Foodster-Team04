@@ -20,7 +20,8 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert`).then(respo
         //add event listener to open recipe page when click on card
         link.addEventListener("click", () => {
             window.location.href = ("#");
-           
+            //save id dessert in local storage
+            saveTolocalStorageCategory(dessert.idMeal);
           });
 
         let img= document.createElement('img')
@@ -34,3 +35,8 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert`).then(respo
 
     });
 }).catch(error=> console.log(error)) 
+
+// function to save id dessert in local storage
+function saveTolocalStorageCategory(CardId) {
+    localStorage.setItem("CardId", CardId);
+  }
