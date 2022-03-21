@@ -127,3 +127,39 @@ footer {
     line-height: 22px;
     text-align: center;
   }
+  /* start footer section */
+.footer {
+    width: 100%;
+    height: 46px;
+    background: #fab714;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+  }
+  .footer p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fafafa;
+    padding-top: 6px;
+  }
+  .facebook {
+    width: 17px;
+    height: 27px;
+  }
+  .twitter {
+    width: 33px;
+    height: 27px;
+  }
+  .instagram {
+    width: 27px;
+    height: 27px;
+  }
+  .footer div {
+    width: 132px;
+    display: flex;
+    justify-content: space-between;
+  }
