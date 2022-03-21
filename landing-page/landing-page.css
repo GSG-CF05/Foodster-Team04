@@ -60,3 +60,45 @@ main {
     margin: auto;
     width: 150px;
   }
+  /* start feature section */
+.features {
+    color: orange;
+    font-size: 30px;
+    background-image: url(./imges/4.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .info-icon {
+    display: flex;
+    margin-top: 30px;
+  }
+  .info-icon img {
+    margin-right: 20px;
+  }
+  .info-icon p {
+    margin-top: 7%;
+    color: #000;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .footer-desktop {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    color: white;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .phone {
+    display: block;
+  }
+  .start-btn a {
+    text-decoration: none;
+    color: white;
+  }
