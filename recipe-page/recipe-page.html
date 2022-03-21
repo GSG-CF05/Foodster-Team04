@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="recipe-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,700&display=swap%22"
+    />
+    <title>Recipe</title>
+  </head>
+  <body>
+      <div class="backgorund-effects">
+        <svg class="top-svg" width="69" height="200" viewBox="0 0 69 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-156.023 301.038C-156.023 301.038 357.604 -111.042 -167.975 -73.7718L-156.023 301.038Z" fill="#FAB714"/>
+            </svg>
+            <svg class="bottom-svg" width="90" height="812" viewBox="0 0 90 812" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M659.782 -110.184C659.782 -110.184 -329.788 647.103 116.009 927.973L659.782 -110.184Z" fill="#FAB714"/>
+                </svg>
+                
+      </div>
+    <div class="recipe-page">
+      <section class="recipe-info">
+        <h1 class="recipe-name">Recipe Name</h1>
+        <div class="recipe-picture">
+          <img src="../assets/images/tart.jpg" alt="No picture available" />
+          <h4 class="notice">Click on the picture for an illustrative video</h4>
+        </div>
+      </section>
+      <section class="recipe-actions">
+        <button class="recipe-button" id="recipe-details-button">Recipe</button>
+        <button class="recipe-button" id="ingredient-button">
+          Ingredients
+        </button>
+         <!-- PopUp section starts here -->
+        <div class="recipe-popup" id="popup1">
+        <div class =recipe-content>
+          <span class="close"&times></span>
+          <p>recipe details</p>
+        </div>
+        </div>
+        <div class="ingredients-popup" id="popup2">
+          <div class =ingredients-content>
+            <span class="close"&times></span>
+            <p>ingredients details</p>
+          </div>
+          </div>
+      </section>    
+    </div>
+  </body>
+</html>
