@@ -23,3 +23,40 @@
     color: #fafafa;
   }
   /* end header section */
+  /* start main section */
+main {
+    background-image: url(./imges/12.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    padding-bottom: 40%;
+  }
+  main h1 {
+    color: orange;
+    margin-top: 200px;
+    margin-left: 30px;
+    font-size: 45px;
+    max-width: 200px;
+  }
+  main button {
+    width: 170px;
+    height: 47px;
+    background: #fab714;
+    border-radius: 21px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    border: none;
+    color: #fafafa;
+  }
+  .iuner-img {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .start-btn {
+    display: block;
+    margin: auto;
+    width: 150px;
+  }
