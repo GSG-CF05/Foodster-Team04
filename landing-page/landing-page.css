@@ -163,3 +163,108 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+  /* responsive design */
+@media only screen and (min-width: 770px) {
+    body {
+      background-image: none;
+      background-image: url(./imges/c12.png);
+      position: relative;
+    }
+    body::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      height: 100%;
+      background-image: url(./imges/c22.png);
+      background-repeat: no-repeat;
+      background-position: center left;
+    }
+    body::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      top: 0;
+      z-index: 11;
+      height: 100%;
+      background-image: url(./imges/c4.png);
+      background-repeat: no-repeat;
+      background-position-y: 400px;
+      background-position-x: right;
+    }
+    header nav {
+      position: relative;
+      z-index: 100;
+    }
+    .mobile-img {
+      display: none;
+    }
+    .desktop-img {
+      display: block;
+      width: 500px;
+      margin-right: 200px;
+    }
+    main {
+      background-image: none;
+      padding-left: 200px;
+  
+      padding-bottom: 5%;
+    }
+  
+    main h1 {
+      font-size: 80px;
+    }
+    .start-btn {
+      margin-left: 100px;
+    }
+  
+    .features {
+      padding-left: 200px;
+      background-image: none;
+    }
+    .features-items {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+    }
+    .features-items img {
+      display: block;
+      margin-bottom: 50px !important;
+      margin: auto;
+    }
+    .features-items p {
+      text-align: center;
+    }
+    .info-icon {
+      display: block;
+    }
+    .phone {
+      display: none;
+    }
+    .desktop {
+      display: block !important;
+    }
+    footer h1 {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 70px;
+    }
+    footer p {
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 45px;
+  
+      text-align: center;
+    }
+    footer {
+      width: 700px;
+      height: 350px;
+      margin: auto;
+    }
+    .start-btn {
+      position: relative;
+      z-index: 100;
+    }
+  }
+  
