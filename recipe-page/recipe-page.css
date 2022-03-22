@@ -65,25 +65,25 @@
   color: #fafafa;
   border-color: #fab714;
 }
-.recipe-popup{
+.recipe-popup {
   display: none;
   position: fixed;
   z-index: index 1;
-  left: 0 ;
+  left: 0;
   top: 0;
   width: 70%;
-  height: 70%;  
+  height: 70%;
 }
-.recipe-content{
-position: absolute;
-width: 313px;
-height: 655px;
-left: 33px;
-top: 78px;
+.recipe-content {
+  position: absolute;
+  width: 313px;
+  height: 655px;
+  left: 33px;
+  top: 78px;
 
-background: #FFFFFF;
-box-shadow: 4px 4px 4px #FAB714;
-border-radius: 60px;
+  background: #ffffff;
+  box-shadow: 4px 4px 4px #fab714;
+  border-radius: 60px;
 }
 .close {
   color: #aaa;
@@ -97,25 +97,25 @@ border-radius: 60px;
   text-decoration: none;
   cursor: pointer;
 }
-.ingredients-popup{
+.ingredients-popup {
   display: none;
   position: fixed;
   z-index: index 1;
-  left: 0 ;
+  left: 0;
   top: 0;
   width: 70%;
-  height: 70%;  
+  height: 70%;
 }
-.ingredients-content{
-position: absolute;
-width: 313px;
-height: 655px;
-left: 33px;
-top: 78px;
+.ingredients-content {
+  position: absolute;
+  width: 313px;
+  height: 655px;
+  left: 33px;
+  top: 78px;
 
-background: #FFFFFF;
-box-shadow: 4px 4px 4px #FAB714;
-border-radius: 60px;
+  background: #ffffff;
+  box-shadow: 4px 4px 4px #fab714;
+  border-radius: 60px;
 }
 .close {
   color: #aaa;
@@ -128,9 +128,23 @@ border-radius: 60px;
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+.recipe-content p {
+  font-size: x-large;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 20px;
+  color: #fab714;
+}
+.ingredients-content p {
+  font-size: x-large;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 20px;
+  color: #fab714;
 }
 @media (min-width: 1200px) {
-  .recipe-name{
+  .recipe-name {
     font-size: 75px;
   }
   .recipe-page {
@@ -154,15 +168,24 @@ border-radius: 60px;
     bottom: 0;
   }
   .recipe-actions {
-    
     width: 30rem;
     display: flex;
     flex-direction: row;
     margin: auto;
     justify-content: space-between;
     margin-top: 40px;
-    }
-    .notice{
-      font-size:medium ;
-    }
+  }
+  .notice {
+    font-size: medium;
+  }
+  .recipe-popup {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .ingredients-popup {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 5%;
+  }
 }
