@@ -4,6 +4,7 @@ let buttonSearch= document.querySelector('.butt-search')
 let categoryName= localStorage.getItem("CategoryName")
 let title=document.querySelector(".title")
 
+buttonSearch.addEventListener('click', searchMeal)
 
 
     // let title=document.createElement("h2");
