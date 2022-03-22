@@ -65,9 +65,9 @@ fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=b")
     });
   });
 
-function saveTolocalStorageCategory(CardId) {
+function saveTolocalStorageCard(CardId) {
   localStorage.setItem("CardId", CardId);
 }
-function saveTolocalStorageCard(CategoryName) {
+function saveTolocalStorageCategory(CategoryName) {
   localStorage.setItem("CategoryName", CategoryName);
 }
