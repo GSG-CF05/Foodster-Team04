@@ -61,15 +61,15 @@ let title=document.querySelector(".title")
             card.appendChild(link)
             link.addEventListener("click", () => {
                 location.href = '../recipe-page/recipe-page.html'
-                saveTolocalStorageCategory(meal.idMeal);
+                saveTolocalStorageCategory(ele.idMeal);
               });
     
             let img= document.createElement('img')
-            img.src= meal.strMealThumb
+            img.src= ele.strMealThumb
             link.appendChild(img)
     
             let nameMeal= document.createElement('h3')
-            nameMeal.textContent= meal.strMeal
+            nameMeal.textContent= ele.strMeal
             link.appendChild(nameMeal)
             input.value=" ";
               }
