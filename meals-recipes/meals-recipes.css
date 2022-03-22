@@ -25,7 +25,7 @@ li {
   list-style: none;
 }
 .Categories .item {
-  width: 6.5rem;
+  width: 7rem;
   height: 29px;
   background: #fab714;
   border-radius: 21px;
@@ -40,57 +40,75 @@ li {
   text-align: center;
   color: #fafafa;
 }
-
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.Card {
+  margin: 1.3rem;
+  border-radius: 12px;
+  width: 159px;
+  height: 15rem;
+  background-color: #fab714;
+  transition: all 0.3s linear;
+}
+
+.Card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  transform: translate3D(0, -9px, 0);
+}
+.Card img {
+  padding: 6px 6px 0px 6px;
+  width: 100%;
+  height: 75%;
+  border-radius: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.Card h3 {
+  text-align: center;
+  font-weight: 400;
+  margin: 2px;
+}
+
+
+
+.arrows{
+  width: 95%;
+  margin: 15px auto 0;
+   display: flex;
+   justify-content: space-between;
+   font-size: 1.1em;
+}
+.arrows i:hover{
+  color: #d6860d;
+}
+
+
+
+@media (min-width: 1200px) {
+  header h1 {
+    padding: 55px 23px 22px 25px;
+    text-align: center;
+    font-size: 30px;
   }
   .Card {
-    margin: 1.3rem;
-    border-radius: 12px;
-    width: 159px;
-    height: 200px;
-    background-color: #fab714;
-    transition: all 0.3s linear;
+    width: 200px;
+    height: 250px;
   }
-  
-  .Card:hover {
-    box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
-    transform: translate3D(0, -9px, 0);
+  .Categories {
+    display: flex;
+    overflow: scroll;
+    flex-direction: row;
+    padding-left: 2rem;
+    margin-top: 0.5rem;
   }
-  .Card img {
-    padding: 6px 6px 0px 6px;
-    width: 100%;
-    height: 83%;
-    border-radius: 12px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  .Card h3 {
-    text-align: center;
-  }
-  
-
-  @media (min-width: 1200px) {
-    header h1 {
-      padding: 55px 23px 22px 25px;
-      text-align: center;
-      font-size: 30px;
-    }
-    .Card {
-      width: 200px;
-      height: 250px;
-    }
-    .Categories {
-      display: flex;
-      overflow: hidden;
-      flex-direction: row;
-      padding-left: 2rem;
-      margin-top: 0.5rem;
-    }
-  }
+  .Categories::-webkit-scrollbar {
+    display: none;
+}
+}
