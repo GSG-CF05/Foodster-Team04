@@ -53,7 +53,7 @@ function saveTolocalStorageCategory(CardId) {
       .then((res) => res.json())
       .then((data) => {
         let allData = data.meals
-        // console.log(allData);
+        container.innerHTML = ''
         allData.forEach((element) => {
           if (element.strCategory === 'Dessert') {
             console.log(element)
