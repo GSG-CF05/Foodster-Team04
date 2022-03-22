@@ -51,6 +51,7 @@ let title=document.querySelector(".title")
           .then((res) => res.json())
           .then((data) => {
             let allData = data.meals
+            container.innerHTML = ''
             allData.forEach(ele => {
               if(ele.strCategory === categoryName){
                 let card = document.createElement('div')
