@@ -21,7 +21,7 @@
     margin: 1.3rem;
     border-radius: 12px;
     width: 159px;
-    height: 230px;
+    height: 200px;
     background-color: #fab714;
     transition: all 0.3s linear;
   }
@@ -56,12 +56,12 @@
   .card img {
     padding: 6px 6px 0px 6px;
     width: 100%;
-    height: 75%;
+    height: 83%;
     border-radius: 12px;
   }
   .card h3 {
     text-align: center;
-    font-weight: 400;
+    font-size: 0.8rem
   }
   
   .card a {
