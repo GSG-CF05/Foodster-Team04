@@ -19,7 +19,7 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert`).then(respo
         card.appendChild(link)
         //add event listener to open recipe page when click on card
         link.addEventListener("click", () => {
-            window.location.href = ("#");
+          location.href = '../recipe-page/recipe-page.html';
             //save id dessert in local storage
             saveTolocalStorageCategory(dessert.idMeal);
           });
