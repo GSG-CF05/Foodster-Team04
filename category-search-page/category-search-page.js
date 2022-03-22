@@ -1,7 +1,7 @@
 let container = document.querySelector('.container')
 let input= document.querySelector('.input-value')
 let buttonSearch= document.querySelector('.butt-search')
-let categoryName= localStorage.getItem("categoryName")
+let categoryName= localStorage.getItem("CategoryName")
 let title=document.querySelector(".title")
 
 
