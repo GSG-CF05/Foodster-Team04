@@ -43,4 +43,59 @@ let title=document.querySelector(".title")
         localStorage.setItem("CardId", CardId);
       }
 
-
+      let items = [];
+      let returnMealsArray = [];
+      
+      function mealsArray() {
+        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?c=${categoryName}`)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            data.meals.forEach((res) => {
+              let aForMeals = document.createElement("a");
+              aForMeals.classList.add("Card");
+              container.appendChild(aForMeals);
+      
+              let imgForMeals = document.createElement("img");
+              imgForMeals.src = res.strMealThumb;
+              aForMeals.appendChild(imgForMeals);
+      
+              let h3ForMeals = document.createElement("h3");
+              h3ForMeals.innerText = res.strMeal;
+              aForMeals.appendChild(h3ForMeals);
+            });
+            saveTolocalStorageArray(data.meals);
+          });
+      }
+      mealsArray();
+      returnMealsArray = JSON.parse(localStorage.getItem("MealsArray"));
+      
+      function searchData(value) {
+        container.innerHTML = "";
+        for (let i = 0; i < returnMealsArray.length; i++) {
+          if (returnMealsArray[i].strMeal.includes(value.toLowerCase())) {
+              returnMealsArray.forEach((res) => {
+                  let aForMeals = document.createElement("a");
+                  aForMeals.classList.add("Card");
+                  container.appendChild(aForMeals);
+      
+                  let imgForMeals = document.createElement("img");
+                  imgForMeals.src = res.strMealThumb;
+                  aForMeals.appendChild(imgForMeals);
+          
+                  let h3ForMeals = document.createElement("h3");
+                  h3ForMeals.innerText = res.strMeal;
+                  aForMeals.appendChild(h3ForMeals);
+      
+                  console.log("fffff",res.strMeal);
+      
+                });
+          }
+        }
+      }
+      
+      function saveTolocalStorageArray(item) {
+        localStorage.setItem("MealsArray", JSON.stringify(item));
+      }
+      
