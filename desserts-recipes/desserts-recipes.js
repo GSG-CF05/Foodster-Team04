@@ -43,7 +43,7 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert`).then(respo
 function saveTolocalStorageCategory(CardId) {
     localStorage.setItem("CardId", CardId);
   }
-
+  localStorage.setItem("API", "desserts");
  
 
   function searchValue(e) {
