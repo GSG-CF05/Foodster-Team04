@@ -71,3 +71,4 @@ function saveTolocalStorageCard(CardId) {
 function saveTolocalStorageCategory(CategoryName) {
   localStorage.setItem("CategoryName", CategoryName);
 }
+localStorage.setItem("API", "meals");
