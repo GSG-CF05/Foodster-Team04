@@ -1,4 +1,13 @@
-// API Section
+//If statment to so that the page knows which API to go with
+let recipeType = localStorage.getItem("API")
+if("API" ==  "drinks"){
+
+
+}
+
+else{
+
+// The FoodDB API Section
 let cardID = localStorage.getItem("CardId");
 let mealsArray = {};
 let recipeInfo = document.querySelector(".recipe-info");
@@ -67,7 +76,7 @@ fetch("https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + cardID)
     console.log(filteredarr);
     ingredientsDetails.textContent = filteredarr.join(", ");
   });
-
+}
 // Popup Section starts here
 let recipePopup = document.getElementById("popup1");
 let recipeButton = document.getElementById("recipe-details-button");
