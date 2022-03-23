@@ -1,11 +1,11 @@
-// API Section 
+// API Section
 let cardID = localStorage.getItem("CardId");
 let mealsArray = {};
 let recipeInfo = document.querySelector(".recipe-info");
 const recipePicture = document.querySelector(".recipe-picture");
 const recipeDetails = document.querySelector(".recipe-details");
 const ingredientsDetails = document.querySelector(".ingredients-details");
-const pageTitle = document.getElementsByTagName("title")[0]
+const pageTitle = document.getElementsByTagName("title")[0];
 
 console.log(cardID);
 fetch("https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + cardID)
@@ -14,16 +14,32 @@ fetch("https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + cardID)
   })
   .then((data) => {
     mealsArray = data.meals[0];
+    // Display the recipe name
     let title = document.createElement("h1");
     console.log("name", mealsArray.strMeal);
-    title.innerText = pageTitle.textContent = mealsArray.strMeal;
-    console.log(pageTitle)
+    title.innerText = pageTitle.textContent = mealsArray.strMeal; //display the recipe name in the page title
     title.classList.add("recipe-name");
     recipeInfo.appendChild(title);
-    recipePicture.innerHTML = ` <a href = ${data.meals[0].strYoutube}>  <img class="recipe-img" src=${data.meals[0].strMealThumb} alt="No picture available"/> </a>
-    <h4 class="notice">Click on the picture for an illustrative video</h4>`; //Youtube Video
+    //Youtube link
+    const li = document.createElement("a");
+    li.setAttribute("href", `${data.meals[0].strYoutube}`);
+    recipePicture.appendChild(li);
+
+    //Recipe picture
+    const recipeImg = document.createElement("img");
+    recipeImg.setAttribute("src", `${data.meals[0].strMealThumb}`);
+    recipeImg.classList.add("recipe-img");
+    recipePicture.appendChild(recipeImg);
+    li.appendChild(recipeImg);
+    //The notice section
+    const notice = document.createElement("h4");
+    notice.classList.add("notice");
+    notice.textContent = "Press on the picture for an illustrative video";
+    recipePicture.appendChild(notice);
+
+    //Recipe ingredients
     recipeDetails.textContent = data.meals[0].strInstructions;
-    let ingredientsArray = []; //Ingredients array 
+    let ingredientsArray = []; //Ingredients array
     ingredientsArray = [
       data.meals[0].strIngredient1,
       data.meals[0].strIngredient2,
