@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     background-position: top right, bottom left;
     padding-bottom: 51px;
+    font-family: 'Roboto';
   }
   .header h1 {
     color: #fab714;
