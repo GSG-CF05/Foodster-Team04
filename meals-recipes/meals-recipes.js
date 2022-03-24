@@ -17,6 +17,9 @@ fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
   })
   .then((data) => {
     data.categories.forEach((res) => {
+      if (res.strCategory == "Dessert") {
+        return;
+      } else {
       let li = document.createElement("li");
       categories.appendChild(li);
 
@@ -33,7 +36,7 @@ fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
       li.addEventListener("click", () => {
         saveTolocalStorageCategory(res.strCategory);
       });
-    });
+    }});
   });
 
 fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=b")
