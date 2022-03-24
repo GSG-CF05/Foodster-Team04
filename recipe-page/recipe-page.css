@@ -21,11 +21,21 @@
   bottom: -30px;
   right: 0px;
 }
+#back {
+  display: flex;
+  font-size: 1.1em;
+  z-index: 1;
+  margin-left: 10px;
+
+}
+#back i:hover{
+  color:white;
+}
 .recipe-info {
   width: 100%;
   text-align: center;
   padding: 4%;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 .recipe-name {
   color: #fab714;
@@ -159,7 +169,6 @@
   }
   .recipe-page {
     height: 30px;
-    margin-top: -300px;
   }
 
   .recipe-picture img {
