@@ -2,61 +2,60 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-  }
-  body {
+}
+
+body {
     background-color: #fafafa;
-    background-image: url(../assets/images/Rectangle-1.svg),
-      url(../assets/images/Rectangle-2.svg);
+    background-image: url(../assets/images/Rectangle-1.svg), url(../assets/images/Rectangle-2.svg);
     background-repeat: no-repeat;
     background-position: top right, bottom left;
-    padding-bottom: 51px;
-    font-family: 'Roboto';
-  }
-  .header h1 {
+    padding-bottom: 7.3rem;
+}
+
+.header h1 {
     color: #fab714;
     text-align: center;
     margin: 20px;
     font-size: 55px;
-  }
-  .Options {
+}
+
+.Options {
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
-  }
-  .Option img {
+}
+
+.Option img {
     margin-top: 1rem;
-    width: 60%;
+    width: 50%;
     border-radius: 50%;
     border: 10px solid #fab714;
     height: 205px;
-  }
-  @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
     div {
-      margin: 0%;
+        margin: 0%;
     }
     .Option img {
-      width: 15%;
-      border-radius: 50%;
-      border: 6px solid #fab714;
-      height: 205px;
+        width: 15%;
+        border-radius: 50%;
+        border: 6px solid #fab714;
+        height: 205px;
     }
-  
     .Options {
-      flex-direction: row;
+        flex-direction: row;
     }
     .Option img {
-      margin-top: 2rem;
-      width: 200px;
-      margin: 3rem;
+        margin-top: 2rem;
+        width: 200px;
+        margin: 3rem;
     }
     .header h1 {
-      margin-top: 3rem;
+        margin-top: 3rem;
     }
     body {
-      padding-bottom: 12.4rem;
+        padding-bottom: 12.4rem;
     }
-  }
-  
-  
- 
+}
