@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Merriweather:ital@1&family=Montserrat:wght@300&family=Nunito:wght@700&family=PT+Sans&family=Roboto+Slab&family=Roboto:ital,wght@0,300;1,400&family=Work+Sans:ital,wght@0,300;0,500;1,300&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
+font-style: normal;
+  }
+  html {
+    scroll-behavior: smooth;
   }
   body {
     background-image: url(../assets/images/c1.png);
@@ -38,7 +44,7 @@ main {
     max-width: 200px;
     font-family: 'Roboto';
 font-style: normal;
-font-weight: 700;
+font-weight: bold;
 font-size: 45px;
 line-height: 53px;
   }
@@ -49,7 +55,7 @@ line-height: 53px;
     border-radius: 21px;
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 25px;
     line-height: 29px;
     border: none;
@@ -116,7 +122,8 @@ footer {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 50px;
     line-height: 35px;
     text-align: center;
     color: #fab714;
