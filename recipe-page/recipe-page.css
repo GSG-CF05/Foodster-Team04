@@ -21,6 +21,17 @@
   bottom: -30px;
   right: 0px;
 }
+#back {
+  width: 95%;
+  margin: 15px auto 0;
+  display: flex;
+  font-size: 1.1em;
+  z-index: 10;
+
+}
+#back i:hover{
+  color:white;
+}
 .recipe-info {
   width: 100%;
   text-align: center;
